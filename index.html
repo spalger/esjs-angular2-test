@@ -14,6 +14,15 @@
             format: 'register',
             defaultExtension: 'js'
           }
+        },
+        map: {
+          elasticsearch: 'node_modules/elasticsearch-browser/elasticsearch.js'
+        },
+        meta: {
+          elasticsearch: {
+            format: 'global',
+            exports: 'elasticsearch'
+          }
         }
       });
       System.import('app/boot')
